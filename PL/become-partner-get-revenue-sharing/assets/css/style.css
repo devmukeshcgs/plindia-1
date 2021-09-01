@@ -2511,6 +2511,7 @@ section {
 
 .text_offer {
     font-size: 32px;
+    padding-bottom: 25px;
 }
 
 .text_offer p {
@@ -2537,7 +2538,9 @@ section {
     .rig_offer {
         background: #fff;
         text-align: center;
-        /* display: flex; */
+        display: flex;
+        align-content: center;
+        align-items: center;
     }
     .offer_img {
         width: auto !important;
@@ -2558,8 +2561,58 @@ section {
         width: 80%;
         margin: 0px auto;
         font-size: 18px;
+        padding-bottom: 0px;
     }
     .text_offer p {
         font-size: 12px;
     }
+}
+
+#crmWebToEntityForm.zcwf_lblLeft * {
+    font-family: "Poppins", sans-serif;
+}
+
+.zcwf_col_fld input {
+    font-size: 14px;
+    padding: 4px;
+}
+
+.zcwf_lblLeft .zcwf_row {
+    margin: 0px 0px 15px 0px;
+}
+
+.zcwf_col_fld.pl-form-cta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.zcwf_col_fld input[type=submit] {
+    font-size: 16px;
+    background: #00324d;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: #fff;
+    border: 0px;
+    outline: 0px;
+    width: 50%;
+    margin: 0px;
+    flex: 1;
+}
+
+.zcwf_col_fld input[type=reset] {
+    font-size: 16px;
+    background: #2db6fa;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: #fff;
+    border: 0px;
+    outline: 0px;
+    width: 50%;
+    margin: 0px;
+    flex: 1;
 }

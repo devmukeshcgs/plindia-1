@@ -159,6 +159,7 @@
   new Swiper('.hero-left-slider', {
     speed: 400,
     effect: 'fade',
+    autoHeight: false,
     loop: true,
     autoplay: {
       delay: 5000,

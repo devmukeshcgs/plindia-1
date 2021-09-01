@@ -2478,6 +2478,18 @@ section {
     text-align: center;
 }
 
+.offer_img {
+    width: 400px;
+    height: 305px;
+    position: relative;
+    margin: auto;
+    background: url(../img/pl/offer_bg.png);
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+
 .offer_img img {
     max-width: 150px;
     margin: 0 auto;

@@ -2255,7 +2255,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-    max-height: 40px;
+    max-height: 70px;
     margin-right: 6px
 }
 
@@ -2480,7 +2480,7 @@ section {
 }
 
 button.partner_bec {
-    display: none;
+    /* display: none; */
     background: #0a90cd;
     border: 0;
     border-radius: 4px;

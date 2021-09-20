@@ -22,3 +22,72 @@ console.log("-------------->", url_utm_source);
 console.log("-------------->", url_utm_medium);
 console.log("-------------->", url_utm_campaign);
 console.log("-------------->", url_utm_content);
+
+$(function () {
+    console.log("ready!");
+});
+var number = $("#Mobile").val();
+function sendOTP() {
+    console.log("SEND OTP");
+    number = $("#Mobile").val();
+    $(".error").html("").hide();
+    if (number.length == 10 && number != null) {
+        console.log(number);
+        var input = {
+            "mobileno": number,
+            "application": "APP1"
+        };
+        $.ajax({
+            url: 'https://uatutilities.plindia.com/apiutilities/api/guest/requestotp',
+            type: 'POST',
+            data: input,
+            success: function (response) {
+                console.log(response);
+                if (response == "OTP SENT SUCCESSFULLY") {
+                    $("#send_otp_btn").hide()
+                    $("#verify").show()
+                    $("#otp").show()
+                }
+                // $(".container").html(response);
+            }
+        });
+    } else {
+        $(".error").html('Please enter a valid number!')
+        $(".error").show();
+    }
+}
+
+function verifyOTP() {
+    number = $("#Mobile").val();
+    console.log(number);
+    $(".error").html("").hide();
+    $(".success").html("").hide();
+    var otp = $("#mobileOtp").val();
+    var input = {
+        "otp": otp,
+        "mobileno": number
+    };
+    if (otp.length == 6 && otp != null) {
+        $.ajax({
+            url: 'https://uatutilities.plindia.com/apiutilities/api/guest/verifyotp',
+            type: 'POST',
+            dataType: "json",
+            data: input,
+            success: function (response) {
+                $("." + response.type).html(response.message)
+                $("." + response.type).show();
+                console.log(response.type);
+                console.log(response);
+                if (response == "VALIDOTP") {
+                    $("#otp-cta").hide()
+                }
+            },
+            error: function () {
+                alert("ss");
+            }
+        });
+    } else {
+        $(".error").html('You have entered wrong OTP.')
+        $(".error").show();
+    }
+}

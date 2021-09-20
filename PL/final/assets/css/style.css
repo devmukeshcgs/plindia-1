@@ -2579,3 +2579,54 @@ img.up_arrow {
 .footer-info .logo {
     justify-content: center
 }
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+.mob-otp-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.mob-input,
+.otp-input {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center; */
+}
+
+#verify {
+    display: none;
+}
+
+#otp-cta input {
+    font-size: 14px;
+    padding: 4px 10px;
+    background: #00324d;
+    color: #fff;
+    border-radius: 2px;
+    transition: all .4s;
+    outline: 0px;
+    margin-top: 5px;
+    border: 0px;
+}
+
+#mob {
+    width: 100%;
+}
+
+#otp {
+    display: none;
+}
+
+.mob-input .btnSubmit,
+.otp-input .btnVerify {
+    margin-top: 5px;
+}

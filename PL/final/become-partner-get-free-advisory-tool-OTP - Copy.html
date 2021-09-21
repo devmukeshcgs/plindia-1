@@ -118,13 +118,13 @@
 
                             <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
 
-                            <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads3142674000014905490 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3142674000014905490()' accept-charset='UTF-8'>
+                            <form id="js-form" action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads3142674000013997084 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3142674000013997084()' accept-charset='UTF-8'>
 
                                 <input type='text' style='display:none;' name='xnQsjsdp' value='69eda8aba37721de040b42bac2e9c45062f6f934fd9d3334f65240cc34eb01bf'></input>
 
                                 <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
 
-                                <input type='text' style='display:none;' name='xmIwtLD' value='66b252cfa730bdf31be121cf3b567bf2e73a38ad93a38d4395e25a19a1406653'></input>
+                                <input type='text' style='display:none;' name='xmIwtLD' value='66b252cfa730bdf31be121cf3b567bf24fc92fa3a37a15fceab272547978369d'></input>
 
                                 <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
 
@@ -328,7 +328,7 @@
                                     }
                                 </style>
 
-                                <!-- <div class='zcwf_title' style='max-width: 600px;color: black;'>Email OTP-GAdsSM-free-advisory-tool</div> -->
+                                <!-- <div class='zcwf_title' style='max-width: 600px;color: black;'>Sitelink2-GAdsSM-RevenueSharing- No Email No captcha OTP</div> -->
 
                                 <div class='zcwf_row'>
                                     <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Last_Name'>Name<span
@@ -341,9 +341,24 @@
                                 <div class='zcwf_row'>
                                     <div class="mob-otp-input">
                                         <div id="mob">
-                                            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Mobile'>Mobile<span style='color:red;'>*</span></label></div>
+                                            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+                                                <label for='Mobile'>Mobile<span style='color:red;'>*</span></label>
+                                            </div>
                                             <div class="mob-input">
-                                                <div class='zcwf_col_fld'><input type='text' id='Mobile' name='Mobile' maxlength='30'></input>
+                                                <div class='zcwf_col_fld'>
+                                                    <input type='text' id='Mobile' name='Mobile' maxlength='30'></input>
+                                                    <div class='zcwf_col_help'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="otp">
+                                            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
+                                                <label for='mobileOtp'>OTP<span style='color:red;'>*</span></label>
+                                            </div>
+                                            <div class="otp-input">
+                                                <div class='zcwf_col_fld'>
+                                                    <input type='text' id='mobileOtp' name='mobileOtp' maxlength='30'></input>
                                                     <div class='zcwf_col_help'></div>
                                                 </div>
                                             </div>
@@ -354,44 +369,13 @@
                                             </div>
                                             <div>
                                                 <input id="send_otp_btn" type="button" class="btnSubmit" value="Send OTP" onClick="sendOTP();">
-                                            </div>
-                                        </div>
-                                        <div id="otp">
-                                            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF54'>Enter
-                                                    OTP<span style='color:red;'>*</span></label></div>
-                                            <div class="otp-input">
-                                                <div class='zcwf_col_fld'><input type='text' id='LEADCF54' name='LEADCF54' maxlength='9'></input>
-                                                    <div class='zcwf_col_help'></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="otp-cta">
-                                            <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-                                                <label for='Mobile' style='  visibility: hidden;'></label>
-                                            </div>
-                                            <div>
                                                 <input id="verify" type="button" class="btnVerify" value="Verify" onClick="verifyOTP();">
                                             </div>
                                         </div>
                                     </div>
                                     <small class="error"></small>
-                                    <small class="success"></small>
 
-                                    <!-- <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Mobile'>Mobile<span
-                                                style='color:red;'>*</span></label></div>
-                                    <div class='zcwf_col_fld'><input type='text' id='Mobile' name='Mobile' maxlength='30'></input>
-                                        <div class='zcwf_col_help'></div>
-                                    </div> -->
                                 </div>
-
-                                <!-- <div class='zcwf_row'>
-                                    <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF54'>Enter OTP<span
-                                                style='color:red;'>*</span></label></div>
-                                    <div class='zcwf_col_fld'><input type='text' id='LEADCF54' name='LEADCF54' maxlength='9'></input>
-                                        <div class='zcwf_col_help'></div>
-                                    </div>
-                                </div> -->
-
                                 <div class='zcwf_row'>
                                     <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Email'>Email<span
                                                 style='color:red;'>*</span></label></div>
@@ -542,36 +526,37 @@
                                 <div class='zcwf_row'>
                                     <div class='zcwf_privacy'>
                                         <div class="inline-check">
+
                                             <div class='dIB vat' align='left'>
                                                 <div class='displayPurpose  f13'><label class='newCustomchkbox-md dIB w100per'><input checked
                                                             autocomplete='off'
-                                                            id='privacyTool3142674000014905490'
+                                                            id='privacyTool3142674000013997084'
                                                             type='checkbox'
                                                             name='privacyTool'
-                                                            onclick='disableErr3142674000014905490()'></label></div>
+                                                            onclick='disableErr3142674000013997084()'></label></div>
                                             </div>
                                             <div class='dIB zcwf_privacy_txt' style='font-size: 12px;font-family:Arial;color: black;'><span style='color: rgb(33, 37, 41); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 12px; background-color: rgb(255, 255, 255);'>I
                                                     authorize Prabhudas Lilladher to call or send text through the Short
                                                     Messaging Service(SMS) orTelegram or WhatsApp in relation to any of
                                                     their products.</span></div>
                                         </div>
-                                        <div id='privacyErr3142674000014905490' style='font-size:12px;color:red;padding-left: 5px;visibility:hidden;'>Please accept this</div>
+
+                                        <div id='privacyErr3142674000013997084' style='font-size:12px;color:red;padding-left: 5px;visibility:hidden;'>Please accept this</div>
                                     </div>
                                 </div>
                                 <div class='zcwf_row'>
                                     <div class='zcwf_col_lab'></div>
-                                    <div class='zcwf_col_fld pl-form-cta'>
-                                        <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
+                                    <div class='zcwf_col_fld pl-form-cta'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'>
                                         <!-- <input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'> -->
                                     </div>
                                 </div>
 
                                 <script>
-                                    function privacyAlert3142674000014905490() {
+                                    function privacyAlert3142674000013997084() {
 
-                                        var privacyTool = document.getElementById('privacyTool3142674000014905490');
+                                        var privacyTool = document.getElementById('privacyTool3142674000013997084');
 
-                                        var privacyErr = document.getElementById('privacyErr3142674000014905490');
+                                        var privacyErr = document.getElementById('privacyErr3142674000013997084');
 
                                         if (privacyTool != undefined && !privacyTool.checked) {
 
@@ -587,11 +572,11 @@
 
                                     }
 
-                                    function disableErr3142674000014905490() {
+                                    function disableErr3142674000013997084() {
 
-                                        var privacyTool = document.getElementById('privacyTool3142674000014905490');
+                                        var privacyTool = document.getElementById('privacyTool3142674000013997084');
 
-                                        var privacyErr = document.getElementById('privacyErr3142674000014905490');
+                                        var privacyErr = document.getElementById('privacyErr3142674000013997084');
 
                                         if (privacyTool != undefined && privacyTool.checked && privacyErr != undefined) {
 
@@ -601,9 +586,9 @@
 
                                     }
 
-                                    function validateEmail3142674000014905490() {
+                                    function validateEmail3142674000013997084() {
 
-                                        var form = document.forms['WebToLeads3142674000014905490'];
+                                        var form = document.forms['WebToLeads3142674000013997084'];
 
                                         var emailFld = form.querySelectorAll('[ftype=email]');
 
@@ -639,15 +624,15 @@
 
 
 
-                                    function checkMandatory3142674000014905490() {
+                                    function checkMandatory3142674000013997084() {
 
-                                        var mndFileds = new Array('Last Name', 'Email', 'Mobile', 'City', 'LEADCF54');
+                                        var mndFileds = new Array('Last Name', 'Email', 'Mobile', 'City');
 
-                                        var fldLangVal = new Array('Name', 'Email', 'Mobile', 'City', 'Enter\x20OTP');
+                                        var fldLangVal = new Array('Name', 'Email', 'Mobile', 'City');
 
                                         for (i = 0; i < mndFileds.length; i++) {
 
-                                            var fieldObj = document.forms['WebToLeads3142674000014905490'][mndFileds[i]];
+                                            var fieldObj = document.forms['WebToLeads3142674000013997084'][mndFileds[i]];
 
                                             if (fieldObj) {
 
@@ -711,13 +696,13 @@
 
                                         trackVisitor();
 
-                                        if (!validateEmail3142674000014905490()) {
+                                        if (!validateEmail3142674000013997084()) {
                                             return false;
                                         }
 
 
 
-                                        if (!privacyAlert3142674000014905490()) {
+                                        if (!privacyAlert3142674000013997084()) {
                                             return false;
                                         }
 
@@ -727,7 +712,7 @@
 
 
 
-                                    function tooltipShow3142674000014905490(el) {
+                                    function tooltipShow3142674000013997084(el) {
 
                                         var tooltip = el.nextElementSibling;
 
@@ -772,16 +757,16 @@
                                     function trackVisitor() {
                                         try {
                                             if ($zoho) {
-                                                var LDTuvidObj = document.forms['WebToLeads3142674000014905490']['LDTuvid'];
+                                                var LDTuvidObj = document.forms['WebToLeads3142674000013997084']['LDTuvid'];
                                                 if (LDTuvidObj) {
                                                     LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();
                                                 }
-                                                var firstnameObj = document.forms['WebToLeads3142674000014905490']['First Name'];
+                                                var firstnameObj = document.forms['WebToLeads3142674000013997084']['First Name'];
                                                 if (firstnameObj) {
                                                     name = firstnameObj.value + ' ' + name;
                                                 }
                                                 $zoho.salesiq.visitor.name(name);
-                                                var emailObj = document.forms['WebToLeads3142674000014905490']['Email'];
+                                                var emailObj = document.forms['WebToLeads3142674000013997084']['Email'];
                                                 if (emailObj) {
                                                     email = emailObj.value;
                                                     $zoho.salesiq.visitor.email(email);
@@ -792,7 +777,7 @@
                                 </script>
 
                                 <!-- Do not remove this --- Analytics Tracking code starts -->
-                                <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=66b252cfa730bdf31be121cf3b567bf2e73a38ad93a38d4395e25a19a1406653gid69eda8aba37721de040b42bac2e9c45062f6f934fd9d3334f65240cc34eb01bfgid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513'></script>
+                                <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=66b252cfa730bdf31be121cf3b567bf24fc92fa3a37a15fceab272547978369dgid69eda8aba37721de040b42bac2e9c45062f6f934fd9d3334f65240cc34eb01bfgid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513'></script>
                                 <!-- Do not remove this --- Analytics Tracking code ends. -->
                             </form>
 

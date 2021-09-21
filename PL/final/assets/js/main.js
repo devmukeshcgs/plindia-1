@@ -24,8 +24,15 @@ console.log("-------------->", url_utm_campaign);
 console.log("-------------->", url_utm_content);
 
 $(function () {
+    $('#js-form').trigger("reset");
+    $("input[type='submit']").prop("disabled", true);
+
     console.log("ready!");
+
+    // $('#formsubmit').on('click', function () {  })
+
 });
+
 var number = $("#Mobile").val();
 function sendOTP() {
     console.log("SEND OTP");
@@ -44,9 +51,11 @@ function sendOTP() {
             success: function (response) {
                 console.log(response);
                 if (response == "OTP SENT SUCCESSFULLY") {
-                    $("#send_otp_btn").hide()
+                    $(".success").html('OTP sent successfully on your mobile')
+                    // $("#send_otp_btn").hide()
                     $("#verify").show()
                     $("#otp").show()
+                    // $("#formsubmit").attr("disabled", 'disabled');
                 }
                 // $(".container").html(response);
             }
@@ -57,12 +66,16 @@ function sendOTP() {
     }
 }
 
+$("#Mobile").on('change', function () {
+    $("#LEADCF54").val('')
+});
+
 function verifyOTP() {
     number = $("#Mobile").val();
     console.log(number);
     $(".error").html("").hide();
     $(".success").html("").hide();
-    var otp = $("#mobileOtp").val();
+    var otp = $("#LEADCF54").val();
     var input = {
         "otp": otp,
         "mobileno": number
@@ -79,7 +92,10 @@ function verifyOTP() {
                 console.log(response.type);
                 console.log(response);
                 if (response == "VALIDOTP") {
-                    $("#otp-cta").hide()
+                    // $("#otp-cta").hide()
+                    jQuery("input[type='submit']").prop("disabled", false);
+                    $(".success").html("").hide();
+                    $(".success").html('OTP verified')
                 }
             },
             error: function () {
@@ -87,6 +103,7 @@ function verifyOTP() {
             }
         });
     } else {
+        jQuery("input[type='submit']").prop("disabled", true);
         $(".error").html('You have entered wrong OTP.')
         $(".error").show();
     }
